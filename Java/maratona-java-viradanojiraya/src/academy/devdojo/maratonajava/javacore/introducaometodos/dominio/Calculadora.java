@@ -32,4 +32,35 @@ public class Calculadora {
 
         System.out.println(num1/num2);
     }
+
+    //Tipos primitivos 
+    public void alterarValores(int numero1, int numero2){
+        numero1 = 33;
+        numero2 = 99;
+
+        System.out.println("Dentro da classe:");
+        System.out.println("Num1 "+numero1);
+        System.out.println("Num1 "+numero2);
+    }
+
+    //Soma valores array#1:
+    public void somaArray1(int[] numeros){
+        int soma = 0;
+
+        for(int i: numeros){
+            soma += i;
+        }
+
+        System.out.println("Soma: "+soma);
+    }
+
+    //Soma valores array#2 Varargs:
+    public void somaArray2(int... numeros){
+        int soma = 0;
+        for(int i: numeros){
+            soma += i;
+        }
+
+        System.out.println("Soma: "+soma);
+    }
 }
